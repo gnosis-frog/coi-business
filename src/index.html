@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Coi business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Coi business</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__actions" id="home">
+        <a href="#home" class="logo header__logo"></a>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="#solutions" class="menu__link">Наше рішення</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#who" class="menu__link">Хто ми</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#help" class="menu__link">Допомога</a>
+            </li>
+
+            <li class="menu__list-item">
+              <a href="#contacts" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header__wrapper">
+        <div class="header__scroll">
+          <h1 class="header__title">
+            Ми робимо <span class="header__title header__title--red">класний бізнес</span>
+          </h1>
+
+          <p class="header__paragraph">
+            Ми допоможемо вам зробити ваш бізнес успішним та прибутковим. Допомагаємо всім, хто цього хоче!
+          </p>
+
+          <a href="#" class="button">
+            Безкоштовна консультація
+          </a>
+        </div>
+      </div>
+    </header>
+
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

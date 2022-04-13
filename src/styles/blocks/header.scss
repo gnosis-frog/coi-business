@@ -1,0 +1,41 @@
+.header {
+  background-image: url(../images/Photo.jpg);
+
+  height: 978px;
+  width: 1900px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__scroll {
+    width: 816px;
+  }
+
+  &__logo {
+    margin-top: 22px;
+  }
+
+  &__title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 100px;
+    color: $c-white;
+    line-height: 118%;
+
+    &--red {
+      color: $c-main;
+    }
+  }
+
+  &__paragraph {
+    font-size: 20px;
+    color: $c-white;
+  }
+}
