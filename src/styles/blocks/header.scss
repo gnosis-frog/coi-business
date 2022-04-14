@@ -1,13 +1,14 @@
 .header {
-  background-image: url(../images/Photo.jpg);
-
   height: 978px;
   width: 1900px;
+
+  background-image: url(../images/Photo.jpg);
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 200px;
   }
 
   &__actions {
@@ -26,8 +27,8 @@
   &__title {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 100px;
-    color: $c-white;
     line-height: 118%;
+    color: $c-white;
 
     &--red {
       color: $c-main;
@@ -35,7 +36,14 @@
   }
 
   &__paragraph {
+    width: 420px;
+    margin-top: 50px;
+
     font-size: 20px;
     color: $c-white;
+  }
+
+  &__button {
+    margin-top: 40px;
   }
 }

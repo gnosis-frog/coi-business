@@ -1,18 +1,32 @@
 .menu {
   &__list {
-    list-style: none;
     display: flex;
+    list-style: none;
 
     &-item {
       margin-left: 50px;
+
+      line-height: 24px;
       font-weight: 500;
       font-size: 20px;
-      line-height: 24px;
     }
   }
 
   &__link {
-    text-decoration: none;
     color: $c-white;
+
+    text-decoration-color: transparent;
+    text-underline-offset: 10px;
+
+    transition: text-decoration 0.3s;
+
+    &:hover {
+      text-decoration-color: $c-hover;
+    }
+
+    &:active {
+      color: $c-pressed;
+      text-decoration-color: $c-pressed;
+    }
   }
 }
