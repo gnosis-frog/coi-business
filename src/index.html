@@ -64,6 +64,152 @@
       </div>
     </header>
 
+    <main class="main">
+      <img
+        src="images/man.jpg"
+        alt="photo of an young man in a suit"
+        class="main__photo"
+      >
+
+      <div class="main__help">
+        <p class="main__help-paragraph">
+          Допомога
+        </p>
+
+        <h2 class="main__title">
+          Запитуйте у <span class="main__title main__title--red">професіоналів</span>
+        </h2>
+
+        <form action="#" class="main__form">
+          <label class="main__label">
+            <input
+            type="text"
+            name="name"
+            class="main__input"
+            >
+
+            <span class="main__label-text">
+              Ім'я*
+            </span>
+          </label>
+
+          <label class="main__label">
+            <input
+            type="tel"
+            name="phone"
+            class="main__input"
+            >
+
+            <span class="main__label-text main__label-text--phone">
+              Телефон
+            </span>
+          </label>
+
+          <label class="main__label">
+            <input
+            type="email"
+            name="email"
+            class="main__input"
+            >
+
+            <span class="main__label-text">
+              Email*
+            </span>
+          </label>
+
+          <select name="points" class="main__select">
+            <option value="default">Оберіть пункт</option>
+            <option value="points1">Пункт 1</option>
+            <option value="points2">Пункт 2</option>
+            <option value="points3">Пункт 3</option>
+            <option value="points4">Пункт 4</option>
+          </select>
+
+          <div class="main__check-buttons">
+            <label class="main__checkbox-label">
+              <input
+                type="checkbox"
+                name="checkbox-1"
+                id="checkbox-1"
+                class="main__checkbox"
+              >
+              Checkbox 1
+            </label>
+
+            <label class="main__checkbox-label">
+              <input
+                type="checkbox"
+                name="checkbox-2"
+                id="checkbox-2"
+                class="main__checkbox"
+              >
+
+              Checkbox 2
+            </label>
+
+            <label class="main__checkbox-label">
+              <input
+                type="checkbox"
+                name="checkbox-3"
+                id="checkbox-3"
+                class="main__checkbox"
+              >
+
+              Checkbox 3
+            </label>
+          </div>
+
+          <div class="main__radio-buttons">
+            <label class="main__radiobutton-label">
+              <input
+                type="radio"
+                name="radiobutton"
+                id="radiobutton-1"
+                value="radiobutton-1"
+                class="main__radiobutton"
+              >
+              Radiobutton 1
+            </label>
+
+            <label class="main__radiobutton-label">
+              <input
+                type="radio"
+                name="radiobutton"
+                id="radiobutton-2"
+                value="radiobutton-2"
+                class="main__radiobutton"
+              >
+              Radiobutton 2
+            </label>
+
+            <label class="main__radiobutton-label">
+              <input
+                type="radio"
+                name="radiobutton"
+                id="radiobutton-3"
+                value="radiobutton-3"
+                class="main__radiobutton"
+              >
+              Radiobutton 3
+            </label>
+          </div>
+
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+            class="main__textarea"
+          >
+            Коментар
+          </textarea>
+
+          <button type="submit" class="button main__button">
+            Відправити дані
+          </button>
+        </form>
+      </div>
+    </main>
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
