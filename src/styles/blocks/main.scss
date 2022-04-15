@@ -57,11 +57,18 @@
     color: $c-gray;
     background-color: $c-white;
 
-    transform: translate(-160px, -11px);
+    transform: translate(30px, -65px);
 
     &--phone {
       width: 4rem;
     }
+  }
+
+  &__input {
+    height: 50px;
+    width: 444px;
+    border: 1px solid #000;
+    border-radius: 4px;
   }
 
   &__select {
@@ -95,12 +102,12 @@
     border: 1px solid $c-gray;
     border-radius: 4px;
     cursor: pointer;
-    transform: translateY(0.2em);
-    transition: background-color 0.3s, transform 0.5s;
+    transform: scale(1.1) translateY(3px);
+    transition: background-color 0.3s, transform 0.3s;
 
     &:checked {
-      background-color: $c-marks;
-      transform: scale(1.05);
+      background-color: $c-secondary;
+      transform: scale(1) translateY(3px);
 
       &::after {
         content: "";
@@ -151,15 +158,11 @@
     transition: background-color 0.3s, transform 0.5s;
 
     &:checked {
-      background-color: $c-marks;
+      background-color: $c-secondary;
       outline: 1px solid $c-gray;
       outline-offset: 2px;
       transform: scale(0.8);
     }
-  }
-
-  &__input {
-    margin-top: 30px;
   }
 
   &__button {
