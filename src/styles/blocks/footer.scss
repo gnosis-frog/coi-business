@@ -1,6 +1,7 @@
 .footer {
   background-color: $c-secondary;
-  width: 1900px;
+  width: 100%;
+  display: none;
 
   &__wrapper {
     height: 100px;

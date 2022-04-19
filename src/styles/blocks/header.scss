@@ -1,15 +1,30 @@
 .header {
-  height: 978px;
-  width: 1900px;
+  height: 100vh;
 
   background-image: url(../images/Photo.jpg);
   background-size: cover;
+
+  &__menu {
+    display: block;
+
+    @include onTablet {
+      position: fixed;
+    }
+  }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin: 0 auto;
+
+    @include onTablet {
+      margin-top: 200px;
+    }
+
+    @include onPhone {
+      margin-top: 100px;
+    }
   }
 
   &__actions {
@@ -17,9 +32,9 @@
     justify-content: space-around;
   }
 
-  &__scroll {
-    width: 816px;
-  }
+  // &__scroll {
+  //   // width: 816px;
+  // }
 
   &__logo {
     margin-top: 22px;
@@ -33,18 +48,47 @@
 
     &--red {
       color: $c-main;
+      margin-right: 0;
+    }
+
+    @include onTablet {
+      font-size: 80px;
+    }
+
+    @include onPhone {
+      font-size: 40px;
+      margin-left: 10px;
+    }
+
+    @include onNotebook {
+      margin-left: 20px;
     }
   }
 
   &__paragraph {
-    width: 420px;
     margin-top: 50px;
 
     font-size: 20px;
     color: $c-white;
+
+    @include onPhone {
+      margin-left: 10px;
+    }
+
+    @include onNotebook {
+      margin-left: 20px;
+    }
   }
 
   &__button {
     margin-top: 40px;
+
+    @include onPhone {
+      margin-left: 10px;
+    }
+
+    @include onNotebook {
+      margin-left: 20px;
+    }
   }
 }

@@ -3,12 +3,28 @@
     display: flex;
     list-style: none;
 
+    @include onTablet {
+      position: fixed;
+      flex-direction: column;
+      margin-left: 50%;
+    }
+
+    @include onPhone {
+      margin-left: 40%;
+    }
+
     &-item {
       margin-left: 50px;
 
       line-height: 24px;
       font-weight: 500;
       font-size: 20px;
+
+      @include onTablet {
+        margin-top: 15px;
+        font-size: 28px;
+        line-height: 28px;
+      }
     }
   }
 

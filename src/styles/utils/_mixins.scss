@@ -4,3 +4,21 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin onTablet {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin onNotebook {
+  @media (max-width: 1900px) {
+    @content;
+  }
+}
+
+@mixin onPhone {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
