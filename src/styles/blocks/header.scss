@@ -16,10 +16,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin-top: 200px;
 
     @include onTablet {
-      margin-top: 200px;
+      margin-top: 40%;
     }
 
     @include onPhone {
@@ -31,10 +31,6 @@
     display: flex;
     justify-content: space-around;
   }
-
-  // &__scroll {
-  //   // width: 816px;
-  // }
 
   &__logo {
     margin-top: 22px;

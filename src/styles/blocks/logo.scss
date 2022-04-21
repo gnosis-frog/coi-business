@@ -7,10 +7,12 @@
 
   @include onTablet {
     height: 33px;
-    width: 400px;
+    width: 200px;
+    margin-left: 15px;
   }
 
   @include onPhone {
-    width: 200px;
+    width: 100px;
+    margin-left: 20px;
   }
 }

@@ -72,7 +72,7 @@
       </div>
     </header>
 
-    <main class="main" id="help">
+    <main class="main">
       <img
         src="images/man.jpg"
         alt="photo of an young man in a suit"
@@ -80,12 +80,13 @@
       >
 
       <div class="main__help">
-        <p class="main__help-paragraph">
+        <p class="main__help-paragraph" id="help">
           Допомога
         </p>
 
         <h2 class="main__title">
-          Запитуйте у <span class="main__title main__title--red">професіоналів</span>
+          Запитуйте у <br>
+          <span class="main__title main__title--red">професіоналів</span>
         </h2>
 
         <form action="#" class="main__form">
@@ -136,74 +137,78 @@
             <option value="points4">Пункт 4</option>
           </select>
 
-          <div class="main__check-buttons">
-            <label class="main__checkbox-label">
-              <input
-                type="checkbox"
-                name="checkbox-1"
-                id="checkbox-1"
-                class="main__checkbox"
-              >
-              Checkbox 1
-            </label>
+          <div class="main__buttons">
+            <div class="main__check-buttons">
+              <label class="main__checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox-1"
+                  id="checkbox-1"
+                  class="main__checkbox"
+                >
+                Checkbox 1
+              </label>
 
-            <label class="main__checkbox-label">
-              <input
-                type="checkbox"
-                name="checkbox-2"
-                id="checkbox-2"
-                class="main__checkbox"
-              >
+              <label class="main__checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox-2"
+                  id="checkbox-2"
+                  class="main__checkbox"
+                >
 
-              Checkbox 2
-            </label>
+                Checkbox 2
+              </label>
 
-            <label class="main__checkbox-label">
-              <input
-                type="checkbox"
-                name="checkbox-3"
-                id="checkbox-3"
-                class="main__checkbox"
-              >
+              <label class="main__checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox-3"
+                  id="checkbox-3"
+                  class="main__checkbox"
+                >
 
-              Checkbox 3
-            </label>
+                Checkbox 3
+              </label>
+            </div>
+
+            <div class="main__radio-buttons">
+              <label class="main__radiobutton-label">
+                <input
+                  type="radio"
+                  name="radiobutton"
+                  id="radiobutton-1"
+                  value="radiobutton-1"
+                  class="main__radiobutton"
+                >
+                Radiobutton 1
+              </label>
+
+              <label class="main__radiobutton-label">
+                <input
+                  type="radio"
+                  name="radiobutton"
+                  id="radiobutton-2"
+                  value="radiobutton-2"
+                  class="main__radiobutton"
+                >
+                Radiobutton 2
+              </label>
+
+              <label class="main__radiobutton-label">
+                <input
+                  type="radio"
+                  name="radiobutton"
+                  id="radiobutton-3"
+                  value="radiobutton-3"
+                  class="main__radiobutton"
+                >
+                Radiobutton 3
+              </label>
+            </div>
           </div>
 
-          <div class="main__radio-buttons">
-            <label class="main__radiobutton-label">
-              <input
-                type="radio"
-                name="radiobutton"
-                id="radiobutton-1"
-                value="radiobutton-1"
-                class="main__radiobutton"
-              >
-              Radiobutton 1
-            </label>
 
-            <label class="main__radiobutton-label">
-              <input
-                type="radio"
-                name="radiobutton"
-                id="radiobutton-2"
-                value="radiobutton-2"
-                class="main__radiobutton"
-              >
-              Radiobutton 2
-            </label>
-
-            <label class="main__radiobutton-label">
-              <input
-                type="radio"
-                name="radiobutton"
-                id="radiobutton-3"
-                value="radiobutton-3"
-                class="main__radiobutton"
-              >
-              Radiobutton 3
-            </label>
-          </div>
 
           <textarea
             name="comments"
@@ -226,22 +231,22 @@
       <div class="footer__wrapper">
         <a href="#home" class="logo footer__logo"></a>
 
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a href="#solutions" class="menu__link">Наше рішення</a>
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-list-item">
+              <a href="#solutions" class="footer__menu-link">Наше рішення</a>
             </li>
 
-            <li class="menu__list-item">
-              <a href="#who" class="menu__link">Хто ми</a>
+            <li class="footer__menu-list-item">
+              <a href="#who" class="footer__menu-link">Хто ми</a>
             </li>
 
-            <li class="menu__list-item">
-              <a href="#help" class="menu__link">Допомога</a>
+            <li class="footer__menu-list-item">
+              <a href="#help" class="footer__menu-link">Допомога</a>
             </li>
 
-            <li class="menu__list-item">
-              <a href="#contacts" class="menu__link">Контакти</a>
+            <li class="footer__menu-list-item">
+              <a href="#contacts" class="footer__menu-link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -253,5 +258,6 @@
     </footer>
 
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   </body>
 </html>

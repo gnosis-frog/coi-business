@@ -1,16 +1,65 @@
 .footer {
   background-color: $c-secondary;
-  width: 100%;
-  display: none;
 
   &__wrapper {
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include onPhone {
+      height: 200px;
+    }
+  }
+
+  &__menu {
+
+    &-list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      @include onPhone {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      &-item {
+        margin-left: 10px;
+        margin-right: 30px;
+
+        line-height: 24px;
+        font-weight: 500;
+        font-size: 20px;
+
+        @include onPhone {
+          margin-top: 13px;
+        }
+      }
+    }
+
+    &-link {
+      color: $c-white;
+
+      text-decoration-color: transparent;
+      text-underline-offset: 10px;
+
+      transition: text-decoration 0.3s;
+
+      &:hover {
+        text-decoration-color: $c-hover;
+      }
+
+      &:active {
+        color: $c-pressed;
+        text-decoration-color: $c-pressed;
+      }
+    }
   }
 
   &__laws {
+    margin-left: 10px;
+    margin-right: 10px;
     color: $c-white;
   }
 }

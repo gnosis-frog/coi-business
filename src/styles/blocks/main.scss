@@ -1,26 +1,37 @@
 .main {
-  width: 100%;
-  // display: flex;
-  display: none;
+  display: flex;
+  background-color: $c-white;
+  overflow-x: hidden;
+
+  @include onTablet {
+    display: block;
+  }
 
   &__photo {
-    height: 866px;
-    width: 602px;
+    max-width: 100%;
     margin-top: 174px;
-    margin-left: 420px;
+    margin-left: 20%;
     margin-bottom: 122px;
 
     box-shadow: -680px -100px 0 -10px $c-white,
       -300px -100px 0 -10px $c-main;
 
+    @include onTablet {
+      margin-bottom: 0;
+    }
   }
 
   &__help {
-    width: 444px;
+    // width: 444px;
     display: flex;
     flex-direction: column;
     margin-top: 140px;
     margin-left: 77px;
+
+    @include onPhone {
+      margin-top: 40px;
+      margin-left: 30px;
+    }
   }
 
   &__help-paragraph {
@@ -28,12 +39,20 @@
     font-size: 24px;
     line-height: 157%;
     color: $c-gray;
+
+    @include onPhone {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 50px;
     font-weight: 700;
+
+    @include onPhone {
+      font-size: 33px;
+    }
 
     &--red {
       color: $c-main;
@@ -60,6 +79,14 @@
 
     transform: translate(30px, -65px);
 
+    @include onTablet {
+      transform: translate(-484px, -27px);
+    }
+
+    @include onPhone {
+      transform: translate(-233px, -26px);
+    }
+
     &--phone {
       width: 4rem;
     }
@@ -67,13 +94,45 @@
 
   &__input {
     height: 50px;
-    width: 444px;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
     border: 1px solid #000;
     border-radius: 4px;
+    font-family: inherit;
+
+    @include onPhone {
+      width: 90%;
+    }
+
+    @include onTablet {
+      width: 70%;
+    }
   }
 
   &__select {
     margin-top: 12px;
+    height: 50px;
+    width: 102%;
+    padding-left: 10px;
+    font-family: inherit;
+    border: 1px solid $c-gray;
+    border-radius: 4px;
+
+    @include onTablet {
+      width: 72%;
+    }
+
+    @include onPhone {
+      width: 74%;
+    }
+  }
+
+  &__buttons {
+
+    @include onPhone {
+      display: flex;
+    }
   }
 
   &__check-buttons {
@@ -84,6 +143,12 @@
     margin-right: 40px;
     font-size: 14px;
     cursor: pointer;
+
+    @include onPhone {
+      display: flex;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
 
     &:hover {
       color: $c-hover;
@@ -128,12 +193,21 @@
 
   &__radio-buttons {
     margin: 15px 20px 30px 0;
+
+    @include onPhone {
+      margin-top: 20px;
+    }
   }
 
   &__radiobutton-label {
     font-size: 14px;
     margin-right: 24px;
     cursor: pointer;
+
+    @include onPhone {
+      display: flex;
+      margin-top: 10px;
+    }
 
     &:hover {
       color: $c-hover;
@@ -166,7 +240,34 @@
     }
   }
 
+  &__textarea {
+    width: 100%;
+    border: 1px solid $c-gray;
+    border-radius: 4px;
+
+    @include onPhone {
+      width: 90%;
+    }
+
+    @include onTablet {
+      width: 70%;
+    }
+  }
+
   &__button {
     margin-top: 75px;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    @include onPhone {
+      width: 72%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
   }
 }
