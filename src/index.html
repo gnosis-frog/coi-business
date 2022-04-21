@@ -24,29 +24,56 @@
   <body class="page__body">
     <header class="header">
       <div class="header__actions" id="home">
-        <a href="#home" class="logo header__logo"></a>
+        <a
+          href="#home"
+          class="logo header__logo"
+          id="logo"
+        ></a>
 
         <a href="#menu" class="icon icon--hamburger"></a>
-
 
         <nav class="menu header__menu">
           <a href="#" class="icon icon--cross"></a>
 
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a href="#solutions" class="menu__link">Наше рішення</a>
+              <a
+                href="#solutions"
+                class="menu__link"
+                id="menu__link-1"
+              >
+                Наше рішення
+              </a>
             </li>
 
             <li class="menu__list-item">
-              <a href="#who" class="menu__link">Хто ми</a>
+              <a
+                href="#who"
+                class="menu__link"
+                id="menu__link-2"
+              >
+                Хто ми
+              </a>
             </li>
 
             <li class="menu__list-item">
-              <a href="#help" class="menu__link">Допомога</a>
+              <a
+              href="#help"
+              class="menu__link"
+              id="menu__link-3"
+              >
+                Допомога
+              </a>
             </li>
 
             <li class="menu__list-item">
-              <a href="#contacts" class="menu__link">Контакти</a>
+              <a
+                href="#contacts"
+                class="menu__link"
+                id="menu__link-4"
+              >
+                Контакти
+              </a>
             </li>
           </ul>
         </nav>
@@ -89,7 +116,10 @@
           <span class="main__title main__title--red">професіоналів</span>
         </h2>
 
-        <form action="#" class="main__form">
+        <form
+          action="#"
+          class="main__form"
+        >
           <label class="main__label">
             <input
             type="text"
@@ -224,6 +254,24 @@
             Відправити дані
           </button>
         </form>
+      </div>
+
+      <div class="modal">
+        <div class="modal__content">
+          <span class="modal__close-button">&times;</span>
+
+          <div class="modal__circle">
+            <div class="modal__tick"></div>
+          </div>
+
+          <h1 class="modal__title">
+            Ваше повідомлення відправлено успішно!
+          </h1>
+
+          <p class="modal__paragraph">
+            Дякуємо! Ваше повідомлення відправлено успішно. Очікуйте на відповідь!
+          </p>
+        </div>
       </div>
     </main>
 
