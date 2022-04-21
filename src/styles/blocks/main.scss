@@ -107,11 +107,12 @@
 
     @include onTablet {
       width: 70%;
+      margin-top: 28px;
     }
   }
 
   &__select {
-    margin-top: 12px;
+    margin-top: 10px;
     height: 50px;
     width: 102%;
     padding-left: 10px;
@@ -121,6 +122,7 @@
 
     @include onTablet {
       width: 72%;
+      margin-top: 25px;
     }
 
     @include onPhone {
@@ -244,6 +246,9 @@
     width: 100%;
     border: 1px solid $c-gray;
     border-radius: 4px;
+    font-family: inherit;
+    padding-left: 10px;
+    padding-top: 15px;
 
     @include onPhone {
       width: 90%;
@@ -268,6 +273,5 @@
       margin-top: 20px;
       margin-bottom: 20px;
     }
-
   }
 }

@@ -3,8 +3,11 @@
   height: 26px;
   margin: auto 0;
   display: inline-block;
-  background: url(../images/icons/Logo.svg) no-repeat;
-  background-size: contain;
+  // background: url(../images/icons/Logo.svg) no-repeat;
+  // background-size: contain;
+  color: $c-white;
+
+  transition: color 0.3s;
 
   @include onTablet {
     height: 33px;

@@ -1,0 +1,58 @@
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control .fas {
+  visibility: hidden;
+  // position: absolute;
+  top: 42px;
+  left: 0;
+}
+
+.form-control.success span.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error span.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  visibility: hidden;
+  transform: translateX(10%);
+
+  @include onTablet {
+    transform: translateY(530%);
+    left: 100px;
+  }
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}

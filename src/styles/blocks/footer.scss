@@ -62,4 +62,25 @@
     margin-right: 10px;
     color: $c-white;
   }
+
+  &__logo {
+    width: 63px;
+    height: 26px;
+    margin: auto 0;
+    display: inline-block;
+    background: url(../images/icons/Logo-white.svg) no-repeat;
+    background-size: contain;
+    color: $c-white;
+
+    @include onTablet {
+      height: 33px;
+      width: 200px;
+      margin-left: 15px;
+    }
+
+    @include onPhone {
+      width: 100px;
+      margin-left: 20px;
+    }
+  }
 }
